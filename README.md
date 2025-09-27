@@ -1,36 +1,200 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Machine Monitoring Dashboard 🏭
 
-## Getting Started
+**Défi Full-Stack - Intelligence Industrielle**
 
-First, run the development server:
+Dashboard de surveillance en temps réel pour le monitoring des machines industrielles dans un environnement de production multi-sites.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Lien de Déploiement
+
+////////
+/////////
+
+**[Voir l'Application Live](https://machine-monitoring-demo.vercel.app)**
+
+## 📋 Description du Projet
+
+Cette application web permet de visualiser et monitorer :
+- **Sites industriels** (usines) avec leur localisation
+- **Départements** de production par site  
+- **Machines** avec leur statut en temps réel
+- **Métriques de performance** (efficacité, température, maintenance)
+
+### Fonctionnalités Principales
+
+✅ **Vue Hiérarchique** : Site → Département → Machine  
+✅ **Vue Grille** : Toutes les machines en un coup d'œil  
+✅ **Filtres Avancés** : Par statut, type de machine, recherche textuelle  
+✅ **Détails Interactifs** : Modal avec informations complètes de chaque machine  
+✅ **Statistiques Temps Réel** : KPIs globaux et indicateurs de performance  
+✅ **Design Responsive** : Optimisé mobile et desktop  
+✅ **Interface Intuitive** : Codes couleurs pour les statuts, badges visuels
+
+## 🛠️ Stack Technique
+
+- **Framework** : Next.js 14 (App Router)
+- **Language** : TypeScript
+- **Styling** : Tailwind CSS
+- **Icons** : Lucide React
+- **Déploiement** : Vercel
+
+## 🎨 Captures d'Écran
+
+### Vue Hiérarchique
+- Organisation claire par sites et départements
+- Cartes machines avec statuts visuels
+- Filtres intégrés en temps réel
+
+### Vue Grille
+- Affichage compact de toutes les machines
+- Tri et filtrage avancé
+- Métriques de performance instantanées
+
+### Modal de Détails
+- Informations complètes de chaque machine
+- Historique de maintenance
+- Indicateurs de température et efficacité
+
+## 📊 Types de Données
+
+```typescript
+interface Machine {
+  id: string;
+  name: string;
+  type: 'CNC' | 'Robot' | 'Presse' | 'Convoyeur' | 'Four';
+  status: 'running' | 'idle' | 'maintenance' | 'error';
+  efficiency: number; // 0-100%
+  temperature?: number; // °C
+  lastMaintenance: string;
+}
+
+interface Department {
+  id: string;
+  name: string;
+  description: string;
+  machines: Machine[];
+}
+
+interface Site {
+  id: string;
+  name: string;
+  location: string;
+  departments: Department[];
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚦 Installation et Test Local
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prérequis
+- Node.js 18+
+- npm ou yarn
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
+```bash
+# Cloner le projet
+////////
 
-## Learn More
+//////
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+git clone https://github.com/votre-username/machine-monitoring.git
+cd machine-monitoring
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Installer les dépendances
+npm install
 
-## Deploy on Vercel
+# Lancer en développement
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Accès Local
+Ouvre [http://localhost:3000](http://localhost:3000) dans ton navigateur.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Utilisation
+
+### Navigation
+1. **Tableau de Bord** : Statistiques globales en haut
+2. **Filtres** : Recherche, statut, type de machine
+3. **Vues** : Basculer entre hiérarchie et grille
+4. **Détails** : Cliquer sur une machine pour plus d'infos
+
+### Filtres Disponibles
+- **Statut** : En marche, En attente, Maintenance, Erreur
+- **Type** : CNC, Robot, Presse, Convoyeur, Four  
+- **Recherche** : Nom de machine (temps réel)
+
+### Codes Couleurs
+- 🟢 **Vert** : Machine en marche
+- 🟡 **Jaune** : En attente  
+- 🔵 **Bleu** : Maintenance programmée
+- 🔴 **Rouge** : Erreur/Panne
+
+## 📈 Fonctionnalités Bonus Implémentées
+
+- **Statistiques Dynamiques** : Calculs en temps réel
+- **Recherche Instantanée** : Filtre au fur et à mesure de la saisie
+- **Animations Fluides** : Transitions et hover effects
+- **Modal Responsive** : Détails complets avec fermeture intuitive
+- **Indicateurs Visuels** : Barres de progression d'efficacité
+- **Design System** : Cohérence visuelle et UX
+
+## 🎯 Choix Techniques Justifiés
+
+### Next.js + TypeScript
+- Performance et SEO optimisés
+- Type safety pour éviter les erreurs
+- Architecture scalable
+
+### Tailwind CSS  
+- Développement rapide
+- Design system intégré
+- Responsive natif
+
+### Structure Componentisée
+- Réutilisabilité maximale
+- Maintenance facilitée
+- Tests unitaires possibles
+
+## 🚀 Déploiement
+
+L'application est automatiquement déployée sur Vercel à chaque push sur la branche main.
+
+### Variables d'Environnement
+Aucune variable requise - données mock intégrées pour la démo.
+
+## 👨‍💻 Développement
+
+### Scripts Disponibles
+```bash
+npm run dev      # Développement local
+npm run build    # Build de production  
+npm run start    # Serveur de production
+npm run lint     # Vérification du code
+```
+
+### Structure du Projet
+```
+src/
+├── app/           # Next.js App Router
+├── components/    # Composants React réutilisables
+├── types/         # Définitions TypeScript
+└── data/          # Données mock
+```
+
+## 🎨 Prochaines Améliorations
+
+- [ ] Graphiques de performance historique
+- [ ] Notifications push pour les pannes
+- [ ] Export des données en CSV/PDF
+- [ ] API REST pour données temps réel
+- [ ] Mode sombre
+- [ ] Internationalisation (i18n)
+
+## 📞 Contact
+samira-chiny.folefack-temfack@.etud.polymtl.ca
+
+**Développé pour Intelligence Industrielle**  
+Hackathon Full-Stack Challenge
+
+---
+
+*Créé TypeScript + Next.js par Samira Folefack*

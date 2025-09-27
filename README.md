@@ -1,14 +1,14 @@
-# Machine Monitoring Dashboard 🏭
+# Machine Monitoring Dashboard
 
 **Défi Full-Stack - Intelligence Industrielle**
 
 Dashboard de surveillance en temps réel pour le monitoring des machines industrielles dans un environnement de production multi-sites.
 
-## 🚀 Lien de Déploiement
+## Lien de Déploiement
 
 Je n'ai malheuresement pas pu le finaliser
 
-## 📋 Description du Projet
+## Description du Projet
 
 Cette application web permet de visualiser et monitorer :
 - **Sites industriels** (usines) avec leur localisation
@@ -18,15 +18,15 @@ Cette application web permet de visualiser et monitorer :
 
 ### Fonctionnalités Principales
 
-✅ **Vue Hiérarchique** : Site → Département → Machine  
-✅ **Vue Grille** : Toutes les machines en un coup d'œil  
-✅ **Filtres Avancés** : Par statut, type de machine, recherche textuelle  
-✅ **Détails Interactifs** : Modal avec informations complètes de chaque machine  
-✅ **Statistiques Temps Réel** : KPIs globaux et indicateurs de performance  
-✅ **Design Responsive** : Optimisé mobile et desktop  
-✅ **Interface Intuitive** : Codes couleurs pour les statuts, badges visuels
+ **Vue Hiérarchique** : Site → Département → Machine  
+ **Vue Grille** : Toutes les machines en un coup d'œil  
+ **Filtres Avancés** : Par statut, type de machine, recherche textuelle  
+ **Détails Interactifs** : Modal avec informations complètes de chaque machine  
+ **Statistiques Temps Réel** : KPIs globaux et indicateurs de performance  
+ **Design Responsive** : Optimisé mobile et desktop  
+ **Interface Intuitive** : Codes couleurs pour les statuts, badges visuels
 
-## 🛠️ Stack Technique
+## Stack Technique
 
 - **Framework** : Next.js 14 (App Router)
 - **Language** : TypeScript
@@ -49,7 +49,7 @@ Cette application web permet de visualiser et monitorer :
 - Historique de maintenance
 - Indicateurs de température et efficacité
 
-## 📊 Types de Données
+## Types de Données
 
 ```typescript
 interface Machine {
@@ -77,7 +77,7 @@ interface Site {
 }
 ```
 
-## 🚦 Installation et Test Local
+## Installation et Test Local
 
 ### Prérequis
 - Node.js 18+
@@ -99,7 +99,7 @@ npm run dev
 ### Accès Local
 Ouvre [http://localhost:3000](http://localhost:3000) dans ton navigateur.
 
-## 🔧 Utilisation
+## Utilisation
 
 ### Navigation
 1. **Tableau de Bord** : Statistiques globales en haut
@@ -113,12 +113,12 @@ Ouvre [http://localhost:3000](http://localhost:3000) dans ton navigateur.
 - **Recherche** : Nom de machine (temps réel)
 
 ### Codes Couleurs
-- 🟢 **Vert** : Machine en marche
-- 🟡 **Jaune** : En attente  
-- 🔵 **Bleu** : Maintenance programmée
-- 🔴 **Rouge** : Erreur/Panne
+- **Vert** : Machine en marche
+- **Jaune** : En attente  
+- **Bleu** : Maintenance programmée
+- **Rouge** : Erreur/Panne
 
-## 📈 Fonctionnalités Bonus Implémentées
+## Fonctionnalités Bonus Implémentées
 
 - **Statistiques Dynamiques** : Calculs en temps réel
 - **Recherche Instantanée** : Filtre au fur et à mesure de la saisie
@@ -127,7 +127,7 @@ Ouvre [http://localhost:3000](http://localhost:3000) dans ton navigateur.
 - **Indicateurs Visuels** : Barres de progression d'efficacité
 - **Design System** : Cohérence visuelle et UX
 
-## 🎯 Choix Techniques Justifiés
+## Choix Techniques Justifiés
 
 ### Next.js + TypeScript
 - Performance et SEO optimisés
@@ -144,14 +144,14 @@ Ouvre [http://localhost:3000](http://localhost:3000) dans ton navigateur.
 - Maintenance facilitée
 - Tests unitaires possibles
 
-## 🚀 Déploiement
+## Déploiement
 
 L'application est automatiquement déployée sur Vercel à chaque push sur la branche main.
 
 ### Variables d'Environnement
 Aucune variable requise - données mock intégrées pour la démo.
 
-## 👨‍💻 Développement
+## Développement
 
 ### Scripts Disponibles
 ```bash
@@ -170,7 +170,7 @@ src/
 └── data/          # Données mock
 ```
 
-## 🎨 Prochaines Améliorations
+## Prochaines Améliorations
 
 - [ ] Graphiques de performance historique
 - [ ] Notifications push pour les pannes
@@ -179,7 +179,7 @@ src/
 - [ ] Mode sombre
 - [ ] Internationalisation (i18n)
 
-## 📞 Contact
+## Contact
 samira-chiny.folefack-temfack@.etud.polymtl.ca
 
 **Développé pour Intelligence Industrielle**  

@@ -44,11 +44,6 @@ Cette application web permet de visualiser et monitorer :
 - Tri et filtrage avancé
 - Métriques de performance instantanées
 
-### Modal de Détails
-- Informations complètes de chaque machine
-- Historique de maintenance
-- Indicateurs de température et efficacité
-
 ## Types de Données
 
 ```typescript
@@ -85,14 +80,12 @@ interface Site {
 
 ### Installation
 ```bash
-# Cloner le projet
+
 git clone https://github.com/samirachiny/machine-monitoring.git
 cd machine-monitoring
 
-# Installer les dépendances
 npm install
 
-# Lancer en développement
 npm run dev
 ```
 
@@ -144,9 +137,6 @@ Ouvre [http://localhost:3000](http://localhost:3000) dans ton navigateur.
 - Maintenance facilitée
 - Tests unitaires possibles
 
-## Déploiement
-
-L'application est automatiquement déployée sur Vercel à chaque push sur la branche main.
 
 ### Variables d'Environnement
 Aucune variable requise - données mock intégrées pour la démo.

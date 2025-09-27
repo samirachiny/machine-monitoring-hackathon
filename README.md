@@ -6,10 +6,7 @@ Dashboard de surveillance en temps réel pour le monitoring des machines industr
 
 ## 🚀 Lien de Déploiement
 
-////////
-/////////
-
-**[Voir l'Application Live](https://machine-monitoring-demo.vercel.app)**
+Je n'ai malheuresement pas pu le finaliser
 
 ## 📋 Description du Projet
 
@@ -35,9 +32,7 @@ Cette application web permet de visualiser et monitorer :
 - **Language** : TypeScript
 - **Styling** : Tailwind CSS
 - **Icons** : Lucide React
-- **Déploiement** : Vercel
-
-## 🎨 Captures d'Écran
+- **Déploiement** : Vercel, mais n'a pas pu être terminé correctement
 
 ### Vue Hiérarchique
 - Organisation claire par sites et départements
@@ -91,12 +86,7 @@ interface Site {
 ### Installation
 ```bash
 # Cloner le projet
-////////
-
-//////
-
-
-git clone https://github.com/votre-username/machine-monitoring.git
+git clone https://github.com/samirachiny/machine-monitoring.git
 cd machine-monitoring
 
 # Installer les dépendances
